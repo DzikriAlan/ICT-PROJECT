@@ -39,12 +39,12 @@
 
     .welcome-shadow,
     .visi-shadow{
-        text-shadow: 6px 0px #064e3b;
+        text-shadow: 5px 0px #064e3b;
     }
 
     .welcome-shadow-dark,
     .visi-shadow-dark{
-        text-shadow: 6px 0px #047857;
+        text-shadow: 5px 0px #047857;
     }
 
     .struktur-organisasi-shadow{
@@ -56,11 +56,11 @@
     }
 
     .logo-ict-shadow-dark{
-        text-shadow: 4px 0px #047857;
+        text-shadow: 3px 0px #047857;
     }
 
     .logo-ict-shadow{
-        text-shadow: 4px 0px #064e3b;
+        text-shadow: 3px 0px #064e3b;
     }
 
     .number-card-shadow{

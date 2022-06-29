@@ -17,7 +17,6 @@
     color: #1c1917;
     font-size: 47px;
     font-family: 'Barlow', sans-serif;
-    letter-spacing: 7px;
   }
 
   form section .input-container label {
@@ -25,8 +24,8 @@
     color: #1c1917;
     font-size: 15px;
     font-family: 'Barlow', sans-serif;
-    letter-spacing: 3px;
     padding-bottom: 8px;
+    letter-spacing: 0.1em;
   }
 
   form section .input-container input {
@@ -76,11 +75,12 @@
     font-family: 'Barlow', sans-serif;
     font-weight: bold;
     font-size: 16px;
-    cursor: pointer;
-    letter-spacing: 3px; 
+    cursor: pointer; 
     transition: .2s all ease-in;
     display:flex;
+    letter-spacing: 0.1em;
   }
+
   form .send-container input:hover {
     transition: .2s all ease-in;
     background: #064e3b;
@@ -136,3 +136,4 @@
     border-right: 5px solid transparent;
     border-left: 5px solid transparent;
   } 
+  }
