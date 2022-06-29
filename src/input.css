@@ -64,7 +64,7 @@
     }
 
     .number-card-shadow{
-        text-shadow: 8px 0px #064e3b;
+        text-shadow: 4px 0px #064e3b;
     }
 
     .name-card-shadow{
@@ -76,7 +76,7 @@
     }
 
     .number-card-shadow-dark{
-        text-shadow: 8px 0px #047857;
+        text-shadow: 4px 0px #047857;
     }
 
     #dark-toggle:checked ~ label .circle-toggle{
