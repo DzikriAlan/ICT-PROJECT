@@ -48,11 +48,11 @@
     }
 
     .struktur-organisasi-shadow{
-        text-shadow: 4px 0px #064e3b;
+        text-shadow: 3px 0px #064e3b;
     }
 
     .struktur-organisasi-shadow-dark{
-        text-shadow: 4px 0px #047857;
+        text-shadow: 3px 0px #047857;
     }
 
     .logo-ict-shadow-dark{
@@ -64,19 +64,19 @@
     }
 
     .number-card-shadow{
-        text-shadow: 4px 0px #064e3b;
+        text-shadow: 3px 0px #064e3b;
     }
 
     .name-card-shadow{
-        text-shadow: 4px 0px #064e3b;
+        text-shadow: 3px 0px #064e3b;
     }
 
     .name-card-shadow-dark{
-        text-shadow: 4px 0px #047857;
+        text-shadow: 3px 0px #047857;
     }
 
     .number-card-shadow-dark{
-        text-shadow: 4px 0px #047857;
+        text-shadow: 3px 0px #047857;
     }
 
     #dark-toggle:checked ~ label .circle-toggle{

@@ -635,7 +635,7 @@ video {
 }
 
 .struktur-organisasi-shadow{
-  text-shadow: 4px 0px #064e3b;
+  text-shadow: 3px 0px #064e3b;
 }
 
 .logo-ict-shadow{
@@ -643,11 +643,11 @@ video {
 }
 
 .number-card-shadow{
-  text-shadow: 4px 0px #064e3b;
+  text-shadow: 3px 0px #064e3b;
 }
 
 .name-card-shadow{
-  text-shadow: 4px 0px #064e3b;
+  text-shadow: 3px 0px #064e3b;
 }
 
 #dark-toggle:checked ~ label .circle-toggle {
@@ -700,12 +700,16 @@ video {
   top: 0px;
 }
 
-.left-\[6px\] {
-  left: 6px;
+.right-\[6px\] {
+  right: 6px;
 }
 
 .left-10 {
   left: 2.5rem;
+}
+
+.left-\[6px\] {
+  left: 6px;
 }
 
 .bottom-3 {
@@ -716,16 +720,8 @@ video {
   right: 0px;
 }
 
-.-top-10 {
-  top: -2.5rem;
-}
-
 .bottom-0 {
   bottom: 0px;
-}
-
-.right-\[6px\] {
-  right: 6px;
 }
 
 .z-10 {
@@ -797,24 +793,16 @@ video {
   height: 3.5rem;
 }
 
-.h-\[190px\] {
-  height: 190px;
+.h-\[180px\] {
+  height: 180px;
 }
 
 .h-12 {
   height: 3rem;
 }
 
-.h-\[346px\] {
-  height: 346px;
-}
-
-.h-\[170px\] {
-  height: 170px;
-}
-
-.h-\[180px\] {
-  height: 180px;
+.h-\[265px\] {
+  height: 265px;
 }
 
 .w-\[30px\] {
@@ -849,16 +837,12 @@ video {
   width: 9rem;
 }
 
-.w-\[310px\] {
-  width: 310px;
+.w-\[290px\] {
+  width: 290px;
 }
 
 .w-12 {
   width: 3rem;
-}
-
-.w-\[290px\] {
-  width: 290px;
 }
 
 .min-w-min {
@@ -933,10 +917,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border-b-\[1px\] {
   border-bottom-width: 1px;
 }
@@ -944,11 +924,6 @@ video {
 .border-slate-300 {
   --tw-border-opacity: 1;
   border-color: rgb(203 213 225 / var(--tw-border-opacity));
-}
-
-.border-slate-100 {
-  --tw-border-opacity: 1;
-  border-color: rgb(241 245 249 / var(--tw-border-opacity));
 }
 
 .bg-slateMuda {
@@ -979,11 +954,6 @@ video {
 .bg-emeraldTua {
   --tw-bg-opacity: 1;
   background-color: rgb(6 78 59 / var(--tw-bg-opacity));
-}
-
-.bg-neutralTua {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
 }
 
 .p-1 {
@@ -1077,8 +1047,8 @@ video {
   padding-bottom: 1.25rem;
 }
 
-.pt-16 {
-  padding-top: 4rem;
+.pt-5 {
+  padding-top: 1.25rem;
 }
 
 .pl-8 {
@@ -1109,20 +1079,12 @@ video {
   padding-right: 1rem;
 }
 
-.pb-28 {
-  padding-bottom: 7rem;
+.pb-36 {
+  padding-bottom: 9rem;
 }
 
 .pt-32 {
   padding-top: 8rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
-}
-
-.pt-5 {
-  padding-top: 1.25rem;
 }
 
 .text-center {
@@ -1163,11 +1125,6 @@ video {
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
-}
-
-.text-5xl {
-  font-size: 3rem;
-  line-height: 1;
 }
 
 .text-2xl {
@@ -1260,7 +1217,7 @@ video {
 }
 
 .dark .dark\:struktur-organisasi-shadow-dark{
-  text-shadow: 4px 0px #047857;
+  text-shadow: 3px 0px #047857;
 }
 
 .dark .dark\:logo-ict-shadow-dark{
@@ -1268,11 +1225,11 @@ video {
 }
 
 .dark .dark\:name-card-shadow-dark{
-  text-shadow: 4px 0px #047857;
+  text-shadow: 3px 0px #047857;
 }
 
 .dark .dark\:number-card-shadow-dark{
-  text-shadow: 4px 0px #047857;
+  text-shadow: 3px 0px #047857;
 }
 
 .dark .dark\:border-zinc-900 {
@@ -1333,19 +1290,14 @@ video {
     padding-top: 4rem;
   }
 
-  .sm\:text-6xl {
-    font-size: 3.75rem;
+  .sm\:text-5xl {
+    font-size: 3rem;
     line-height: 1;
   }
 
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
-  }
-
-  .sm\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
   }
 
   .sm\:text-4xl {
@@ -1370,11 +1322,6 @@ video {
 
   .md\:justify-between {
     justify-content: space-between;
-  }
-
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
   }
 }
 
@@ -1474,6 +1421,10 @@ video {
 
   .lg\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .lg\:pt-64 {
+    padding-top: 16rem;
   }
 }
 
