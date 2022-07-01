@@ -1,34 +1,3 @@
-const hamburger = document.querySelector("#hamburger");
-const navmenu = document.querySelector("#navmenu");
-
-// hamburger di klik navmenu link turun
-hamburger.addEventListener('click', () => {
-    navmenu.classList.toggle('navmenu-naik');
-    navmenu.classList.toggle('navmenu-turun');
-})
-
-document.querySelectorAll('.navlist').forEach(e => {
-    e.addEventListener('click', () => {
-        navmenu.classList.toggle('navmenu-naik');
-        navmenu.classList.toggle('navmenu-turun');
-    })
-})
-
-// window di scroll navbar nya ilang
-window.onscroll = function () {
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
-    const toTop = document.querySelector('#to-Top');
-
-    if (window.pageYOffset > fixedNav) {
-        toTop.classList.remove('hidden');
-        toTop.classList.add('flex');
-    } else {
-        toTop.classList.remove('flex');
-        toTop.classList.add('hidden');
-    }
-}
-
 // Darkmode toggle
 const darkToggle = document.querySelector('#dark-toggle');
 const html = document.querySelector('html');
@@ -50,12 +19,27 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = false;
 }
 
+// window di scroll navbar nya ilang
+window.onscroll = function () {
+    const header = document.querySelector('header');
+    const fixedNav = header.offsetTop;
+    const toTop = document.querySelector('#to-Top');
+
+    if (window.pageYOffset > fixedNav) {
+        toTop.classList.remove('hidden');
+        toTop.classList.add('flex');
+    } else {
+        toTop.classList.remove('flex');
+        toTop.classList.add('hidden');
+    }
+}
+
 // Darkmode toggle
-const darkToggleMobile = document.querySelector('#dark-toggle-2');
+const darkToggleDua = document.querySelector('#dark-toggle-2');
 const htmlDua = document.querySelector('html');
 
-darkToggleMobile.addEventListener('click', function () {
-    if (darkToggleMobile.checked) {
+darkToggleDua.addEventListener('click', function () {
+    if (darkToggleDua.checked) {
         htmlDua.classList.add('dark');
         localStorage.theme = 'dark';
     } else {
@@ -66,7 +50,18 @@ darkToggleMobile.addEventListener('click', function () {
 
 // pindahkan posisi toggle sesuai mode
 if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-    darkToggleMobile.checked = true;
+    darkToggleDua.checked = true;
 } else {
-    darkToggleMobile.checked = false;
+    darkToggleDua.checked = false;
 }
+
+$(document).ready(function () {
+    $(".nav-toggler").each(function (_, navToggler) {
+        var target = $(navToggler).data("target");
+        $(navToggler).on("click", function () {
+            $(target).animate({
+                height: "toggle",
+            });
+        });
+    });
+});

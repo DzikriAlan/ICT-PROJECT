@@ -50,7 +50,7 @@
     background: none;
     font-family: 'montserrat', sans-serif;
     font-size: 16px;
-    color: #e2e8f0;
+    color: #1c1917;
     background: #cbd5e1;
   }
 
@@ -108,7 +108,7 @@
     font-size: 1rem;
     font-weight: normal;
     max-width: 100%;
-    padding: 8px 24px 8px 10px;
+    padding: 8px 24px 8px 4px;
     border: none;
     font-family: 'Barlow', sans-serif;
     font-size: 16px;

@@ -9,6 +9,7 @@
   <!-- css -->
   <link rel="stylesheet" href="dist/css/style.css">
   <link rel="stylesheet" href="output.css">
+  <script type="text/javascript" src="/dist/script/jquery.js"></script>
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,67 +28,70 @@
 </head>
 
 <body class="bg-slateMuda dark:bg-neutralTua">
-  <!-- Start Header -->
-  <header class="navbar-fixed">
-    <div class="navbar relative z-10">
-      <div class="container">
-        <div class="py-6 px-5 lg:px-14 flex justify-between">
-          <a href="index.html">
-            <span class="text-slateTua dark:text-slate-50 text-xl font-rubik font-bold">ict</span>
-            <span class="text-emerald dark:text-emerald text-xl font-rubik font-bold">duacikbar</span>
-          </a>
-          <div id="hamburger" class="lg:hidden cursor-pointer w-[30px] h-[22px] flex flex-col justify-between">
-            <div class="inline-block h-[3px] w-full rounded-full bg-slateTua dark:bg-slateMuda"></div>
-            <div class="inline-block h-[3px] w-full rounded-full bg-slateTua dark:bg-slateMuda"></div>
-            <div class="inline-block h-[3px] w-[70%] rounded-full bg-slateTua dark:bg-slateMuda self-end">
-            </div>
+  <!-- Start Navigasi -->
+  <header
+    class="fixed w-full z-50 bg-slateMuda dark:bg-neutralTua border-b-[2px] border-slate-300 dark:border-[#151515] ">
+    <div class="container">
+      <div class="px-5 lg:px-14 py-6 flex items-center bg-slateMuda dark:bg-neutralTua justify-between">
+        <a href="index.html" class="font-rubik text-xl font-bold">
+          <span class="text-slateTua dark:text-slateMuda">ict</span>
+          <span class="text-emerald dark:text-emerald">duacikbar</span>
+        </a>
+        <div id="hamburger" data-target="#navigation"
+          class="lg:hidden nav-toggler cursor-pointer w-[30px] h-[22px] flex flex-col justify-between">
+          <div class="inline-block h-[3px] w-full rounded-full bg-slateTua dark:bg-slateMuda"></div>
+          <div class="inline-block h-[3px] w-full rounded-full bg-slateTua dark:bg-slateMuda"></div>
+          <div class="inline-block h-[3px] w-[70%] rounded-full bg-slateTua dark:bg-slateMuda self-end">
           </div>
-          <div class="hidden lg:flex w-1/2 lg:justify-between lg:items-center">
-            <a href="index.html"
-              class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">Home</a>
-            <a href="about.html"
-              class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">About</a>
-            <a href="contact.html"
-              class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">Contact</a>
-            <span class="flex items-center ">
-              <span class="pr-2 font-montserrat text-slateTua dark:text-slateMuda">Light</span>
-              <input type="checkbox" class="hidden" id="dark-toggle">
-              <label for="dark-toggle"
-                class="cursor-pointer flex items-center h-5 w-10 rounded-xl bg-slateParuhbaya dark:bg-slateMuda p-1">
-                <span
-                  class="circle-toggle inline-block h-4 w-4 bg-white rounded-full transition-all duration-200 ease-in-out"></span>
-              </label>
-              <span class="pl-2 font-montserrat text-slateTua dark:text-slateMuda">Dark</span>
-            </span>
-          </div>
+        </div>
+        <div class="hidden lg:flex lg:w-1/2 lg:justify-between lg:items-center">
+          <a href="index.html"
+            class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">Home</a>
+          <a href="about.html"
+            class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">About</a>
+          <a href="contact.html"
+            class="text-slateTua dark:text-slateMuda hover:text-emerald dark:hover:text-emerald font-montserrat transition-all duration-300 ease-in">Contact</a>
+          <span class="flex items-center ">
+            <span class="pr-2 font-montserrat text-slateTua dark:text-slateMuda">Light</span>
+            <input type="checkbox" class="hidden" id="dark-toggle">
+            <label for="dark-toggle"
+              class="cursor-pointer flex items-center h-5 w-10 rounded-xl bg-slateParuhbaya dark:bg-slateMuda p-1">
+              <span
+                class="circle-toggle inline-block h-4 w-4 bg-white rounded-full transition-all duration-200 ease-in-out"></span>
+            </label>
+            <span class="pl-2 font-montserrat text-slateTua dark:text-slateMuda">Dark</span>
+          </span>
         </div>
       </div>
     </div>
-    <div id="navmenu" class="lg:hidden navmenu-naik bg-slateMuda navbar transition-all duration-500 ease-in-out">
-      <a href="index.html"
-        class="navlist lg:inline block text-center text-slateTua dark:text-slateMuda dark:hover:text-emerald hover:text-emerald font-montserrat py-3 transition-all duration-200 ease-in border-b-[1px] border-slate-300 dark:border-zinc-900">Home</a>
-      <a href="about.html"
-        class="navlist lg:inline block text-center text-slateTua dark:text-slateMuda dark:hover:text-emerald hover:text-emerald font-montserrat py-3 transition-all duration-200 ease-in border-b-[1px] border-slate-300 dark:border-zinc-900">About</a>
-      <a href="contact.html"
-        class="navlist lg:inline block text-center text-slateTua dark:text-slateMuda dark:hover:text-emerald hover:text-emerald font-montserrat py-3 transition-all duration-200 ease-in border-b-[1px] border-slate-300 dark:border-zinc-900">Contact</a>
-      <span class="flex items-center py-3">
-        <div class="flex mx-auto">
-          <span class="pr-2 font-montserrat text-slateTua dark:text-slateMuda">Light</span>
+    <div
+      class="bg-slateMuda absolute border-y-[2px] border-slate-300 dark:border-[#151515] left-0 top-[76px] dark:bg-neutralTua hidden w-full"
+      id="navigation">
+      <div
+        class="font-montserrat text-slateTua dark:text-slateMuda lg:w-full lg:flex lg:justify-between lg:items-center">
+        <a href="index.html"
+          class="block lg:inline w-full hover:text-emerald dark:hover:text-emerald border-b-[1px] border-b-zinc-300 py-4 text-center dark:border-b-[#151515]">Home</a>
+        <a href=" about.html"
+          class="block lg:inline w-full hover:text-emerald dark:hover:text-emerald border-b-[1px] border-b-zinc-300 py-4 text-center dark:border-b-[#151515]">About</a>
+        <a href="contact.html"
+          class="block lg:inline w-full hover:text-emerald dark:hover:text-emerald border-b-[1px] border-b-zinc-300 py-4 text-center dark:border-b-[#151515]">Contact</a>
+        <div class="flex justify-center mx-auto py-3 ">
+          <span class="pr-2 font-montserrat">Light</span>
           <input type="checkbox" class="hidden" id="dark-toggle-2" />
           <label for="dark-toggle-2"
             class="cursor-pointer flex items-center h-5 w-10 rounded-xl bg-slateParuhbaya dark:bg-neutralMuda p-1">
             <span
               class="circle-toggle inline-block h-4 w-4 bg-white rounded-full transition-all duration-200 ease-in-out"></span>
           </label>
-          <span class="pl-2 text-montserrat text-slateTua dark:text-slateMuda">Dark</span>
+          <span class="pl-2 text-montserrat">Dark</span>
         </div>
-      </span>
+      </div>
     </div>
   </header>
-  <!-- Start Header -->
+  <!-- Start Navigasi -->
 
   <!-- Start Contact Section -->
-  <section id="home" class="pt-32 pb-32">
+  <section id="home" class="pt-40 pb-32">
     <div class="container ">
       <div class="px-5 lg:px-14 ">
         <h2 class="text-3xl font-rubik font-bold pb-16 dark:text-slateMuda">FORM PENDAFTARAN ICT</h2>
@@ -96,19 +100,21 @@
             <section class="lg:w-1/2">
               <div class="input-container pb-4 ">
                 <label for="nama-lengkap" class="dark:text-slateMuda">Nama Lengkap</label>
-                <input type="text" class="dark:bg-neutralMuda" id="nama-lengkap" required>
+                <input type="text" class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" id="nama-lengkap"
+                  required>
               </div>
               <div class="input-container pb-4">
                 <label class="dark:text-slateMuda" for="nama-panggilan">Nama Panggilan</label>
-                <input type="text" class="dark:bg-neutralMuda" id="nama-panggilan" required>
+                <input type="text" class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" id="nama-panggilan"
+                  required>
               </div>
               <div class="input-container pb-4">
                 <label class="dark:text-slateMuda" for="kelas">Kelas</label>
-                <input type="text" class="dark:bg-neutralMuda" id="kelas" required>
+                <input type="text" class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" id="kelas" required>
               </div>
               <div class="input-container pb-4">
                 <label class="dark:text-slateMuda" for="jurusan">Jurusan</label>
-                <input type="text" class="dark:bg-neutralMuda" id="jurusan" required>
+                <input type="text" class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" id="jurusan" required>
               </div>
             </section>
             <section class="lg:w-1/2">
@@ -116,21 +122,23 @@
                 <label class="dark:text-slateMuda" for="address">Divisi</label>
                 <div class="select-dropdown ">
                   <select class="dark:bg-neutralMuda w-full">
-                    <option selected disabled>-- Silahkan Pilih Divisi --</option>
-                    <option value="photography">Photography</option>
-                    <option value="programming">Programming</option>
-                    <option value="dkv">Desain Komunikasi Visual</option>
-                    <option value="robotik">Robotik</option>
+                    <option selected disabled class="dark:text-slateMuda font-montserrat">-- Silahkan Pilih Divisi --
+                    </option>
+                    <option value="photography" class="font-montserrat">Photography</option>
+                    <option value="programming" class="font-montserrat">Programming</option>
+                    <option value="dkv" class="font-montserrat">Desain Komunikasi Visual</option>
+                    <option value="robotik" class="font-montserrat">Robotik</option>
                   </select>
                 </div>
               </div>
               <div class="input-container pb-4">
                 <label class="dark:text-slateMuda" for="wa">Nomor Telephone</label>
-                <input class="dark:bg-neutralMuda" id="wa" type="text" required>
+                <input class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" id="wa" type="text" required>
               </div>
               <div class="input-container pb-4">
                 <label class="dark:text-slateMuda" for="comments">Alasan Masuk Ekstrakulikuler ICT</label>
-                <textarea class="dark:bg-neutralMuda" name="comments" id="comments" required></textarea>
+                <textarea class="dark:bg-neutralMuda text-slateTua dark:text-slateMuda" name="comments" id="comments"
+                  required></textarea>
               </div>
               <div class="send-container lg:flex lg:flex-row-reverse">
                 <input class="tracking-submit" type="submit" value="SUBMIT" onclick="return true" />
