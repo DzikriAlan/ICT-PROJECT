@@ -5,7 +5,7 @@ function getConnection(): PDO{
     $port = 3306;
     $database = "form_ict";
     $username = "root";
-    $password = "4l4nlazhy792";
+    $password = "";
 
     return new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
 }

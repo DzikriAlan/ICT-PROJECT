@@ -1064,6 +1064,10 @@ video {
   padding-bottom: 10rem;
 }
 
+.pb-14 {
+  padding-bottom: 3.5rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1367,6 +1371,10 @@ video {
 
   .lg\:justify-evenly {
     justify-content: space-evenly;
+  }
+
+  .lg\:gap-12 {
+    gap: 3rem;
   }
 
   .lg\:self-end {

@@ -29,7 +29,7 @@
   }
 
   form section .input-container input {
-    width: 100%;
+    width: 92%;
     padding: 5px;
     height: 40px;
     border-radius: 3px;
@@ -42,7 +42,7 @@
   }
 
   form section .input-container textarea{
-    width: 100%;
+    width: 92%;
     height: 128px;
     padding: 12px;
     border-radius: 3px;
@@ -98,6 +98,7 @@
     padding: 0;
     position: relative;
     box-sizing: border-box;
+    width: 92%; 
   }
   .select-dropdown {
     position: relative;
