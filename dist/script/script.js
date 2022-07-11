@@ -1,3 +1,11 @@
+// Hamburger
+const hamburger = document.querySelector('#hamburger');
+const navMenu = document.querySelector('#navigation');
+
+hamburger.addEventListener('click', function () {
+    hamburger.classList.toggle('hamburger-active');
+});
+
 // Darkmode toggle
 const darkToggle = document.querySelector('#dark-toggle');
 const html = document.querySelector('html');
