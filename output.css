@@ -755,10 +755,6 @@ video {
   height: 3.5rem;
 }
 
-.h-\[180px\] {
-  height: 180px;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -793,10 +789,6 @@ video {
 
 .w-36 {
   width: 9rem;
-}
-
-.w-\[290px\] {
-  width: 290px;
 }
 
 .w-12 {
@@ -1256,14 +1248,6 @@ video {
 }
 
 @media (min-width: 640px) {
-  .sm\:h-\[337px\] {
-    height: 337px;
-  }
-
-  .sm\:w-\[570px\] {
-    width: 570px;
-  }
-
   .sm\:pt-16 {
     padding-top: 4rem;
   }
